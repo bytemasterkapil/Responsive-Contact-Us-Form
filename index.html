@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content1="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="content1">
+        <div class="left-side">
+          <div class="address details kapil">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">3rd Floor, Gandhi Maidan Rd,</div>
+            <div class="text-two">Bihar-800001</div> 
+          
+            
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91-0120 2719500</div>
+            
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">principalnou@gmail.com</div>
+          
+          </div>
+        </div>
+
+
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any query , you can send me message from here.</p>
+          <form action="controller.jsp" method="post">
+            <input type="hidden" name="page" value="contactus">
+
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" name="name"/>
+            </div>
+            <div class="">
+              <input type="radio" placeholder="Enter your Gender" name="gender" value="Male"/> Male
+              <input type="radio" placeholder="Enter your Gender" name="gender" value="Female"/> Female
+
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your Address" name="address"></textarea>
+            </div>
+            <div class="input-box">
+              <input type="number" placeholder="Enter your Contact No" name="contactno"/>
+            </div>
+
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" name="emailaddress" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message" name="enquirytext"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
